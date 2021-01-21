@@ -6,8 +6,12 @@ import ThumbUpAltOutlinedIcon from '@material-ui/icons/ThumbUpAltOutlined';
 import ChatOutlinedIcon from '@material-ui/icons/ChatOutlined';
 import ShareOutlinedIcon from '@material-ui/icons/ShareOutlined';
 import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const Post = forwardRef(({ name, description, message, photoUrl}, ref) => {
+    //  * Yet to add the delete function
+     const deleteMessage = () => {}
+
     return (
         <div ref={ref} className='post'>
             <div className="post__header">
@@ -16,6 +20,7 @@ const Post = forwardRef(({ name, description, message, photoUrl}, ref) => {
                     <h2>{name}</h2>
                     <p>{description}</p>
                 </div>
+                    <DeleteIcon onClick={deleteMessage}/>
             </div>
 
             <div className="post__body">

@@ -8,6 +8,16 @@
   display: flex;
   margin-bottom: 10px;
 }
+.post__header > .MuiSvgIcon-root {
+  font-size: 18px;
+  color: gray;
+  margin-left: auto;
+  cursor: pointer;
+}
+.post__header > .MuiSvgIcon-root:hover {
+  color: #111;
+  background-color: whitesmoke;
+}
 .post__info {
   margin-left: 10px;
 }
